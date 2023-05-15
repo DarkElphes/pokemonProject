@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* resetting default configs */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* configs css*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width:1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bab;
+    color: #333333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo, header .img-btn{
+    display: flex;
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #btn-change-theme{
+    background: none;
+    border: none;
+}
+
+header .logo:hover, #btn-change-theme:hover, .poke-card:hover{
+    transform: scale(1.05);
+    cursor: pointer;    
+}
+
+main{
+    padding: 25px;
+}
+
+main .poke-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .poke-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .poke-card:hover{
+    background-color: #96d9d6;
+}
+
+main .poke-card, .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .poke-card .info span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .poke-card .gif{
+    width: 90px;
+
+}
+
+main .poke-card .types{
+    display: flex;
+    gap: 15px;
+}
+
+main .poke-card .type-glass, .type-poison, .type-fire, .type-flying, .type-water, .type-bug{
+    padding: 8px;
+    border-radius: 10px;
+}
+.type-glass{
+    background-color: #7ac74c;
+}
+
+.type-poison{
+    background-color: #df67ddfb;
+}
+
+.type-fire{
+    background-color: #ee8130;
+}
+
+.type-flying{
+    background-color: #b6cdff;
+}
+
+.type-water{
+    background-color: #6390f0;
+}
+
+.type-bug{
+    background-color: #a6b91a;
+}
+
+main .description{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+/* dark mode configs*/
+body.dark-mode{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+.dark-mode .poke-card{
+    background-color: #a8a8a8;
+}
