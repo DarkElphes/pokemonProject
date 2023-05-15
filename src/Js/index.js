@@ -6,9 +6,9 @@ btnChangeTheme.addEventListener("click", () => {
     const activateDarkMode = body.classList.contains("dark-mode")
     body.classList.toggle("dark-mode")
     if(activateDarkMode){
-        imgBtnChangeTheme.setAttribute("src", "/src/img/sun.png");
+        imgBtnChangeTheme.setAttribute("src", "./src/img/sun.png");
     }
     else{
-        imgBtnChangeTheme.setAttribute("src", "/src/img/moon.png");
+        imgBtnChangeTheme.setAttribute("src", "./src/img/moon.png");
     }
 })
